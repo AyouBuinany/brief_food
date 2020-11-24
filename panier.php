@@ -111,10 +111,8 @@ if(isset($_POST['envoyer']) && !empty($_POST['envoyer']))
 			$stat3->execute();
 			}
 		}
-		if(supprimerPanier($db)){
+		if(supprimerPanier($db))
 				echo '<script> alert("commande confirmer");</script>';
-				header("Location:accueil.php");
-		}
 	}
 ?>
 
